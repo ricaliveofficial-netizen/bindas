@@ -1,0 +1,27 @@
+/* বডির মার্জিন রিসেট করা এবং স্প্ল্যাশ স্ক্রীনে স্ক্রলিং বন্ধ করা */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* স্প্ল্যাশ স্ক্রীনের সময় স্ক্রলিং বন্ধ */
+}
+
+/* ফুল স্ক্রীন স্প্ল্যাশ স্ক্রীন */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ভিডিও ফিট করার জন্য */
+#splash-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

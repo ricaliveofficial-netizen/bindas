@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="left">
+        <img src="assets/user.png" class="user-icon">
+        <div class="info">
+            <h3 id="userName">John Doe</h3>
+            <p id="userId">ID: 12345678</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <p>Balance</p>
+        <div class="bal-box" id="userBalance">
+            <img src="assets/coin.png">
+            <span>$0</span>
+        </div>
+        <button class="add-btn" onclick="updateBalance(100)">+ Add Balance</button>
+    </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee">
+    <p>Slide.... Welcome to my site ❤️</p>
+</div>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slide active"><img src="assets/slide1.png"></div>
+    <div class="slide"><img src="assets/slide2.png"></div>
+    <div class="slide"><img src="assets/slide3.png"></div>
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+    <a href=Game/"splash.html" class="card">
+        <img src="assets/card1.png">
+        <p>Card 1</p>
+    </a>
+    <a href="Game/card2.html" class="card">
+        <img src="assets/card2.png">
+        <p>Card 2</p>
+    </a>
+    <a href=Game/"card3.html" class="card">
+        <img src="assets/card3.png">
+        <p>Card 3</p>
+    </a>
+    <a href=Game/"card4.html" class="card">
+        <img src="assets/card4.png">
+        <p>Card 4</p>
+    </a>
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+    <a href="index.html">
+        <img src="assets/home.png">
+        <div>Home</div>
+    </a>
+
+    <a href="message.html">
+        <img src="assets/message.png">
+        <div>Message</div>
+    </a>
+
+    <a href="mine.html">
+        <img src="assets/mine.png">
+        <div>Mine</div>
+    </a>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>

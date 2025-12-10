@@ -1,0 +1,23 @@
+{
+  "name": "render-mongodb-app",
+  "version": "1.0.0",
+  "description": "Node.js app with MongoDB Atlas for Render deployment",
+  "main": "user.js",
+  "scripts": {
+    "start": "node user.js",
+    "dev": "nodemon user.js"
+  },
+  "keywords": [],
+  "author": "Auro Live",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
