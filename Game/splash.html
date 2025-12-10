@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .splash-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: url('assets/photo.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .loader {
+            width: 80%;
+            height: 20px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        .loader-bar {
+            height: 100%;
+            width: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: width 0.05s linear;
+        }
+    </style>
+</head>
+<body>
+
+<div class="splash-container">
+    <div class="loader">
+        <div class="loader-bar" id="loader-bar"></div>
+    </div>
+</div>
+
+<script>
+    let loader = document.getElementById('loader-bar');
+    let width = 0;
+    let duration = 5000; // 5 seconds
+    let intervalTime = duration / 100; // লোডিং বারকে 100% পূর্ণ করতে সময়
+
+    let loading = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(loading);
+        } else {
+            width += 1;
+            loader.style.width = width + "%";
+        }
+    }, intervalTime);
+
+    // 5 সেকেন্ড পরে gredy.html এ রিডাইরেক্ট
+    setTimeout(() => {
+        window.location.href = "gredy.html";
+    }, 5000);
+</script>
+
+</body>
+</html>

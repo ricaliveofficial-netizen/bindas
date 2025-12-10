@@ -1,0 +1,29 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#0b0b0b;color:white;}
+
+/* HEADER */
+.header{background:#131724;padding:12px;border-radius:8px;margin:6px;}
+.profile{display:flex;align-items:center;gap:10px;justify-content:space-between;}
+.profile div{display:flex;flex-direction:column;}
+.profilePic{width:50px;height:50px;border-radius:50%;object-fit:cover;}
+.balanceDisplay{font-weight:bold;}
+.recharge{margin-top:6px;background:#ffae00;height:30px;border:none;padding:0 15px;border-radius:6px;font-weight:bold;cursor:pointer;}
+
+/* SLIDE TEXT */
+.slideText{background:#1a1a2e;padding:8px 12px;margin:6px;border-radius:6px;overflow:hidden;white-space:nowrap;}
+
+/* CARD GRID */
+.gameWrapper{width:95%;margin:0 auto;}
+.cardContainer{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:10px;}
+.card{width:30%;border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column;align-items:center;cursor:pointer;}
+.card img{width:100%;height:70px;object-fit:cover;}
+.cardLabel{margin-top:3px;font-weight:bold;font-size:14px;color:#ffae00;text-align:center;}
+
+/* WIN LIST */
+.winList{width:95%;margin:10px auto;background:#202533;border-radius:8px;padding:8px;min-height:100px;overflow:hidden;}
+
+/* BET BUTTONS */
+.amountBtns{display:flex;justify-content:space-around;margin:10px;}
+.amtBtn{flex:1;margin:0 4px;padding:8px 0;background:#ffae00;border:none;border-radius:6px;font-weight:bold;font-size:14px;cursor:pointer;color:#000;}
+.amtBtn:hover{background:#ffcc33;}
+.amtBtn.active{background:#ff4c4c;color:#fff;}

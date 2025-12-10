@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gredy Game</title>
+<link rel="stylesheet" href="gredy.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="profile">
+    <img src="assets/profile.png" alt="Profile" class="profilePic">
+    <div>
+      <div>ID: <span id="userId">12345</span></div>
+      <div>Name: <span id="userName">User Name</span></div>
+      <div>Balance: <span class="balanceDisplay" id="balance">50000</span></div>
+      <button class="recharge">Recharge</button>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE TEXT -->
+<div class="slideText" id="slideText">
+  Welcome to Gredy Game! Place your bets and win big! 🎮💰
+</div>
+
+<!-- CARD GRID -->
+<div class="gameWrapper">
+  <div class="cardContainer">
+    <div class="card" id="c1"><img src="assets/cards/1.jpg"><div class="cardLabel">15×</div></div>
+    <div class="card" id="c2"><img src="assets/cards/2.jpg"><div class="cardLabel">10×</div></div>
+    <div class="card" id="c3"><img src="assets/cards/3.jpg"><div class="cardLabel">5×</div></div>
+    <div class="card" id="c4"><img src="assets/cards/4.jpg"><div class="cardLabel">5×</div></div>
+    <div class="card" id="c5"><img src="assets/cards/5.jpg"><div class="cardLabel">25×</div></div>
+    <div class="card" id="c6"><img src="assets/cards/6.jpg"><div class="cardLabel">45×</div></div>
+    <div class="card" id="c7"><img src="assets/cards/7.jpg"><div class="cardLabel">5×</div></div>
+    <div class="card" id="c8"><img src="assets/cards/8.jpg"><div class="cardLabel">5×</div></div>
+    <div class="card" id="c9"><img src="assets/cards/9.jpg"><div class="cardLabel">5×</div></div>
+  </div>
+</div>
+
+<!-- WIN LIST -->
+<div class="winList" id="winList"></div>
+
+<!-- BET BUTTONS -->
+<div class="amountBtns">
+  <button class="amtBtn" data-value="1000">1000</button>
+  <button class="amtBtn" data-value="5000">5000</button>
+  <button class="amtBtn" data-value="10000">10000</button>
+ 
+</div>
+
+<script src="gredy.js"></script>
+</body>
+</html>
